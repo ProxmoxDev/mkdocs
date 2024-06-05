@@ -1,3 +1,5 @@
 site_name: s-tanaka-test
 theme:
   name: material
+  palette:
+    primary: teal
