@@ -1,0 +1,9 @@
+services:
+  docs:
+    build:
+      context: ./
+    ports:
+      - 8000:8000
+    volumes:
+      - ./docs:/docs
+    tty: true
