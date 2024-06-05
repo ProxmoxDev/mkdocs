@@ -5,6 +5,7 @@ RUN pip3 install mkdocs mkdocs-material
 FROM base AS dev
 
 FROM base AS builder
+COPY ./docs /docs
 RUN mkdocs build
 
 FROM nginx:alpine3.19-perl AS production
